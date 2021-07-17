@@ -1,0 +1,85 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    
+      <meta charset="utf-8">
+      <title>Bokeh Plot</title>
+      
+      
+        
+          
+        
+        
+          
+        <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-2.3.1.min.js" integrity="sha384-YF85VygJKMVnHE+lLv2AM93Vbstr0yo2TbIu5v8se5Rq3UQAUmcuh4aaJwNlpKwa" crossorigin="anonymous"></script>
+        <script type="text/javascript">
+            Bokeh.set_log_level("info");
+        </script>
+        
+      
+      
+    
+  </head>
+  
+  
+  <body>
+    
+      
+        
+          
+          
+            
+              <div class="bk-root" id="ccdc6680-a015-4077-9bf7-f0ff3b8b4f63" data-root-id="33515"></div>
+            
+          
+        
+      
+      
+        <script type="application/json" id="33822">
+          {"1f4e44e2-3ba9-46a8-9669-aa7bbe131e6f":{"defs":[],"roots":{"references":[{"attributes":{"days":[1,15]},"id":"33570","type":"DaysTicker"},{"attributes":{},"id":"33609","type":"DatetimeTickFormatter"},{"attributes":{"text":"Totale casi a Benevento - Campania"},"id":"33554","type":"Title"},{"attributes":{},"id":"33528","type":"BasicTicker"},{"attributes":{},"id":"33532","type":"WheelZoomTool"},{"attributes":{},"id":"33516","type":"DataRange1d"},{"attributes":{"axis":{"id":"33527"},"dimension":1,"ticker":null},"id":"33530","type":"Grid"},{"attributes":{"active_multi":null,"tools":[{"id":"33531"},{"id":"33532"},{"id":"33533"},{"id":"33534"},{"id":"33535"},{"id":"33536"},{"id":"33546"}]},"id":"33538","type":"Toolbar"},{"attributes":{"fill_color":{"value":"#1f77b4"},"line_color":{"value":"#1f77b4"},"x":{"field":"date"},"y":{"field":"value"}},"id":"33579","type":"Circle"},{"attributes":{},"id":"33531","type":"PanTool"},{"attributes":{"data_source":{"id":"33547"},"glyph":{"id":"33579"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"33580"},"view":{"id":"33582"}},"id":"33581","type":"GlyphRenderer"},{"attributes":{"months":[0,4,8]},"id":"33573","type":"MonthsTicker"},{"attributes":{"base":24,"mantissas":[1,2,4,6,8,12],"max_interval":43200000.0,"min_interval":3600000.0,"num_minor_ticks":0},"id":"33566","type":"AdaptiveTicker"},{"attributes":{"items":[{"id":"33577"}],"location":"top_left"},"id":"33576","type":"Legend"},{"attributes":{},"id":"33521","type":"LinearScale"},{"attributes":{"label":{"value":"Totale casi a Benevento - Campania"},"renderers":[{"id":"33551"},{"id":"33581"}]},"id":"33577","type":"LegendItem"},{"attributes":{"desired_num_ticks":20,"num_minor_ticks":5,"tickers":[{"id":"33564"},{"id":"33565"},{"id":"33566"},{"id":"33567"},{"id":"33568"},{"id":"33569"},{"id":"33570"},{"id":"33571"},{"id":"33572"},{"id":"33573"},{"id":"33574"},{"id":"33575"}]},"id":"33524","type":"DatetimeTicker"},{"attributes":{"source":{"id":"33547"}},"id":"33552","type":"CDSView"},{"attributes":{"line_color":"#1f77b4","line_width":2,"x":{"field":"date"},"y":{"field":"value"}},"id":"33549","type":"Line"},{"attributes":{},"id":"33560","type":"AllLabels"},{"attributes":{"line_alpha":0.1,"line_color":"#1f77b4","line_width":2,"x":{"field":"date"},"y":{"field":"value"}},"id":"33550","type":"Line"},{"attributes":{"data":{"date":{"__ndarray__":"AAAA5UcHd0IAAMBKmgd3QgAAgLDsB3dCAABAFj8Id0IAAAB8kQh3QgAAwOHjCHdCAACARzYJd0IAAECtiAl3QgAAABPbCXdCAADAeC0Kd0IAAIDefwp3QgAAQETSCndCAAAAqiQLd0IAAMAPdwt3QgAAgHXJC3dCAABA2xsMd0IAAABBbgx3QgAAwKbADHdCAACADBMNd0IAAEByZQ13QgAAANi3DXdCAADAPQoOd0IAAICjXA53QgAAQAmvDndCAAAAbwEPd0IAAMDUUw93QgAAgDqmD3dCAABAoPgPd0IAAAAGSxB3QgAAwGudEHdCAACA0e8Qd0IAAEA3QhF3QgAAAJ2UEXdCAADAAucRd0IAAIBoORJ3QgAAQM6LEndCAAAANN4Sd0IAAMCZMBN3QgAAgP+CE3dCAABAZdUTd0IAAADLJxR3QgAAwDB6FHdCAACAlswUd0IAAED8HhV3QgAAAGJxFXdCAADAx8MVd0IAAIAtFhZ3QgAAQJNoFndCAAAA+boWd0IAAMBeDRd3QgAAgMRfF3dCAABAKrIXd0IAAACQBBh3QgAAwPVWGHdCAACAW6kYd0IAAEDB+xh3QgAAACdOGXdCAADAjKAZd0IAAIDy8hl3QgAAQFhFGndCAAAAvpcad0IAAMAj6hp3QgAAgIk8G3dCAABA744bd0IAAABV4Rt3QgAAwLozHHdCAACAIIYcd0IAAECG2Bx3QgAAAOwqHXdCAADAUX0dd0IAAIC3zx13QgAAQB0iHndCAAAAg3Qed0IAAMDoxh53QgAAgE4ZH3dCAABAtGsfd0IAAAAavh93QgAAwH8QIHdCAACA5WIgd0IAAEBLtSB3QgAAALEHIXdCAADAFlohd0IAAIB8rCF3QgAAQOL+IXdCAAAASFEid0IAAMCtoyJ3QgAAgBP2IndCAABAeUgjd0IAAADfmiN3QgAAwETtI3dCAACAqj8kd0IAAEAQkiR3QgAAAHbkJHdCAADA2zYld0IAAIBBiSV3QgAAQKfbJXdCAAAADS4md0IAAMBygCZ3QgAAgNjSJndCAABAPiUnd0IAAACkdyd3QgAAwAnKJ3dCAACAbxwod0IAAEDVbih3QgAAADvBKHdCAADAoBMpd0IAAIAGZil3QgAAQGy4KXdCAAAA0goqd0IAAMA3XSp3QgAAgJ2vKndCAABAAwIrd0IAAABpVCt3QgAAwM6mK3dCAACANPkrd0IAAECaSyx3QgAAAACeLHdCAADAZfAsd0IAAIDLQi13QgAAQDGVLXdCAAAAl+ctd0IAAMD8OS53QgAAgGKMLndCAABAyN4ud0IAAAAuMS93QgAAwJODL3dCAACA+dUvd0IAAEBfKDB3QgAAAMV6MHdCAADAKs0wd0IAAICQHzF3QgAAQPZxMXdCAAAAXMQxd0IAAMDBFjJ3QgAAgCdpMndCAABAjbsyd0IAAADzDTN3QgAAwFhgM3dCAACAvrIzd0IAAEAkBTR3QgAAAIpXNHdCAADA76k0d0IAAIBV/DR3QgAAQLtONXdCAAAAIaE1d0IAAMCG8zV3QgAAgOxFNndCAABAUpg2d0IAAAC46jZ3QgAAwB09N3dCAACAg483d0IAAEDp4Td3QgAAAE80OHdCAADAtIY4d0IAAIAa2Th3QgAAQIArOXdCAAAA5n05d0IAAMBL0Dl3QgAAgLEiOndCAABAF3U6d0IAAAB9xzp3QgAAwOIZO3dCAACASGw7d0IAAECuvjt3QgAAABQRPHdCAADAeWM8d0IAAIDftTx3QgAAQEUIPXdCAAAAq1o9d0IAAMAQrT13QgAAgHb/PXdCAABA3FE+d0IAAABCpD53QgAAwKf2PndCAACADUk/d0IAAEBzmz93QgAAANntP3dCAADAPkBAd0IAAICkkkB3QgAAQArlQHdCAAAAcDdBd0IAAMDViUF3QgAAgDvcQXdCAABAoS5Cd0IAAAAHgUJ3QgAAwGzTQndCAACA0iVDd0IAAEA4eEN3QgAAAJ7KQ3dCAADAAx1Ed0IAAIBpb0R3QgAAQM/BRHdCAAAANRRFd0IAAMCaZkV3QgAAgAC5RXdCAABAZgtGd0IAAADMXUZ3QgAAwDGwRndCAACAlwJHd0IAAED9VEd3QgAAAGOnR3dCAADAyPlHd0IAAIAuTEh3QgAAQJSeSHdCAAAA+vBId0IAAMBfQ0l3QgAAgMWVSXdCAABAK+hJd0IAAACROkp3QgAAwPaMSndCAACAXN9Kd0IAAEDCMUt3QgAAACiES3dCAADAjdZLd0IAAIDzKEx3QgAAQFl7THdCAAAAv81Md0IAAMAkIE13QgAAgIpyTXdCAABA8MRNd0IAAABWF053QgAAwLtpTndCAACAIbxOd0IAAECHDk93QgAAAO1gT3dCAADAUrNPd0IAAIC4BVB3QgAAQB5YUHdCAAAAhKpQd0IAAMDp/FB3QgAAgE9PUXdCAABAtaFRd0IAAAAb9FF3QgAAwIBGUndCAACA5phSd0IAAEBM61J3QgAAALI9U3dCAADAF5BTd0IAAIB94lN3QgAAQOM0VHdCAAAASYdUd0IAAMCu2VR3QgAAgBQsVXdCAABAen5Vd0IAAADg0FV3QgAAwEUjVndCAACAq3VWd0IAAEARyFZ3QgAAAHcaV3dCAADA3GxXd0IAAIBCv1d3QgAAQKgRWHdCAAAADmRYd0IAAMBztlh3QgAAgNkIWXdCAABAP1tZd0IAAAClrVl3QgAAwAoAWndCAACAcFJad0IAAEDWpFp3QgAAADz3WndCAADAoUlbd0IAAIAHnFt3QgAAQG3uW3dCAAAA00Bcd0IAAMA4k1x3QgAAgJ7lXHdCAABABDhdd0IAAABqil13QgAAwM/cXXdCAACANS9ed0IAAECbgV53QgAAAAHUXndCAADAZiZfd0IAAIDMeF93QgAAQDLLX3dCAAAAmB1gd0IAAMD9b2B3QgAAgGPCYHdCAABAyRRhd0IAAAAvZ2F3QgAAwJS5YXdCAACA+gtid0IAAEBgXmJ3QgAAAMawYndCAADAKwNjd0IAAICRVWN3QgAAQPenY3dCAAAAXfpjd0IAAMDCTGR3QgAAgCifZHdCAABAjvFkd0IAAAD0Q2V3QgAAwFmWZXdCAACAv+hld0IAAEAlO2Z3QgAAAIuNZndCAADA8N9md0IAAIBWMmd3QgAAQLyEZ3dCAAAAItdnd0IAAMCHKWh3QgAAgO17aHdCAABAU85od0IAAAC5IGl3QgAAwB5zaXdCAACAhMVpd0IAAEDqF2p3QgAAAFBqandCAADAtbxqd0IAAIAbD2t3QgAAQIFha3dCAAAA57Nrd0IAAMBMBmx3QgAAgLJYbHdCAABAGKtsd0IAAAB+/Wx3QgAAwONPbXdCAACASaJtd0IAAECv9G13QgAAABVHbndCAADAeplud0IAAIDg6253QgAAQEY+b3dCAAAArJBvd0IAAMAR4293QgAAgHc1cHdCAABA3Ydwd0IAAABD2nB3QgAAwKgscXdCAACADn9xd0IAAEB00XF3QgAAANojcndCAADAP3Zyd0IAAIClyHJ3QgAAQAsbc3dCAAAAcW1zd0IAAMDWv3N3QgAAgDwSdHdCAABAomR0d0IAAAAIt3R3QgAAwG0JdXdCAACA01t1d0IAAEA5rnV3QgAAAJ8AdndCAADABFN2d0IAAIBqpXZ3QgAAQND3dndCAAAANkp3d0IAAMCbnHd3QgAAgAHvd3dCAABAZ0F4d0IAAADNk3h3QgAAwDLmeHdCAACAmDh5d0IAAED+inl3QgAAAGTdeXdCAADAyS96d0IAAIAvgnp3QgAAQJXUendCAAAA+yZ7d0IAAMBgeXt3QgAAgMbLe3dCAABALB58d0IAAACScHx3QgAAwPfCfHdCAACAXRV9d0IAAEDDZ313QgAAACm6fXdCAADAjgx+d0IAAID0Xn53QgAAQFqxfndCAAAAwAN/d0IAAMAlVn93QgAAgIuof3dCAABA8fp/d0IAAABXTYB3QgAAwLyfgHdCAACAIvKAd0IAAECIRIF3QgAAAO6WgXdCAADAU+mBd0IAAIC5O4J3QgAAQB+OgndCAAAAheCCd0IAAMDqMoN3QgAAgFCFg3dCAABAtteDd0IAAAAcKoR3QgAAwIF8hHdCAACA586Ed0IAAEBNIYV3QgAAALNzhXdCAADAGMaFd0IAAIB+GIZ3QgAAQORqhndCAAAASr2Gd0IAAMCvD4d3QgAAgBVih3dCAABAe7SHd0IAAADhBoh3QgAAwEZZiHdCAACArKuId0IAAEAS/oh3QgAAAHhQiXdCAADA3aKJd0IAAIBD9Yl3QgAAQKlHindCAAAAD5qKd0IAAMB07Ip3QgAAgNo+i3dCAABAQJGLd0IAAACm44t3QgAAwAs2jHdCAACAcYiMd0IAAEDX2ox3QgAAAD0tjXdCAADAon+Nd0IAAIAI0o13QgAAQG4kjndCAAAA1HaOd0IAAMA5yY53QgAAgJ8bj3dCAABABW6Pd0IAAABrwI93QgAAwNASkHdCAACANmWQd0IAAECct5B3QgAAAAIKkXdCAADAZ1yRd0IAAIDNrpF3QgAAQDMBkndCAAAAmVOSd0IAAMD+pZJ3QgAAgGT4kndCAABAykqTd0IAAAAwnZN3QgAAwJXvk3dCAACA+0GUd0IAAEBhlJR3QgAAAMfmlHdCAADALDmVd0IAAICSi5V3QgAAQPjdlXdCAAAAXjCWd0IAAMDDgpZ3QgAAgCnVlndCAABAjyeXd0IAAAD1eZd3QgAAwFrMl3dCAACAwB6Yd0IAAEAmcZh3QgAAAIzDmHdCAADA8RWZd0IAAIBXaJl3QgAAQL26mXdCAAAAIw2ad0IAAMCIX5p3QgAAgO6xmndCAABAVASbd0IAAAC6Vpt3QgAAwB+pm3dCAACAhfubd0IAAEDrTZx3QgAAAFGgnHdCAADAtvKcd0IAAIAcRZ13QgAAQIKXnXdCAAAA6Omdd0IAAMBNPJ53QgAAgLOOnndCAABAGeGed0IAAAB/M593QgAAwOSFn3dCAACAStifd0IAAECwKqB3QgAAABZ9oHdCAADAe8+gd0IAAIDhIaF3QgAAQEd0oXdCAAAArcahd0IAAMASGaJ3QgAAgHhrondCAABA3r2id0IAAABEEKN3QgAAwKlio3dCAACAD7Wjd0IAAEB1B6R3QgAAANtZpHdCAADAQKykd0IAAICm/qR3QgAAQAxRpXdCAAAAcqOld0IAAMDX9aV3QgAAgD1IpndCAABAo5qmd0IAAAAJ7aZ3QgAAwG4/p3dCAACA1JGnd0IAAEA65Kd3QgAAAKA2qHdCAADABYmod0IAAIBr26h3QgAAQNEtqXdCAAAAN4Cpd0IAAMCc0ql3QgAAgAIlqndCAABAaHeqd0IAAADOyap3Qg==","dtype":"float64","order":"little","shape":[509]},"value":[0,0,0,0,0,0,0,0,0,0,0,0,0,4,4,4,2,3,3,3,4,4,4,4,8,8,11,13,13,14,14,14,15,21,21,70,76,81,85,85,86,108,108,111,133,145,149,152,156,156,157,157,157,164,167,170,170,170,170,171,175,177,177,177,177,182,182,182,182,183,186,186,186,189,189,189,189,190,192,192,192,192,196,196,199,200,200,200,201,204,204,204,204,204,205,206,207,208,208,208,209,209,209,209,209,209,209,209,209,209,209,209,209,209,209,209,209,209,209,209,209,209,209,209,209,209,209,209,209,209,209,209,209,209,209,209,209,209,209,209,209,209,209,209,209,209,209,209,209,209,209,209,209,209,209,209,209,209,209,209,210,210,210,211,211,211,211,211,211,211,212,214,217,217,221,221,221,223,223,224,224,227,228,228,228,228,229,230,235,236,239,244,247,252,252,256,256,258,261,266,269,280,289,289,292,296,304,317,328,332,332,338,342,345,359,377,383,387,389,393,393,413,435,450,450,450,456,476,512,528,543,545,545,580,585,627,649,662,685,709,709,728,756,804,867,864,892,946,992,992,1056,1056,1056,1108,1128,1206,1272,1272,1285,1286,1317,1451,1575,1665,1701,1759,1793,1793,2089,2136,2248,2276,2293,2389,2389,2598,2661,2727,2804,2835,2882,2907,2963,3005,3021,3095,3169,3194,3350,3794,3949,4079,4130,4161,4209,4253,4298,4347,4018,4341,4341,4392,4428,4443,4472,4503,4515,4521,4538,4571,4617,4659,4700,4711,4736,4785,4813,4851,4880,4893,4910,4945,4974,5006,5022,5098,5110,5133,5153,5178,5182,5209,5259,5311,5352,5378,5405,5423,5471,5510,5645,5703,5748,5793,5823,5888,5942,6005,6066,6125,6168,6225,6295,6359,6424,6474,6513,6543,6562,6607,6637,6679,6716,6746,6774,6802,6817,6876,6917,6937,6958,6997,7012,7035,7060,7067,7132,7141,7147,7233,7311,7364,7432,7523,7601,7622,7678,7783,7854,7925,8021,8086,8105,8161,8230,8331,8440,8519,8562,8580,8668,8756,8756,8952,9042,9077,9087,9129,9247,9400,9532,9677,9766,9796,9863,9996,10153,10259,10374,10445,10489,10569,10637,10789,10876,10965,11023,11055,11107,11163,11238,11492,11580,11610,11626,11653,11720,11796,11858,11889,11929,11945,11959,11999,12028,12072,12093,12121,12136,12159,12179,12205,12233,12261,12266,12267,12283,12283,12329,12333,12349,12358,12373,12408,12432,12436,12443,12461,12467,12469,12474,12484,12487,12491,12501,12503,12507,12511,12516,12526,12530,12536,12539,12539,12541,12541,12548,12551,12552,12554,12554,12557,12557,12560,12561,12562,12563,12563,12567,12572,12575,12579,12585,12585,12585,12592,12595,12597,12601]},"selected":{"id":"33561"},"selection_policy":{"id":"33562"}},"id":"33547","type":"ColumnDataSource"},{"attributes":{"days":[1,8,15,22]},"id":"33569","type":"DaysTicker"},{"attributes":{"below":[{"id":"33523"}],"center":[{"id":"33526"},{"id":"33530"},{"id":"33576"}],"height":300,"left":[{"id":"33527"}],"renderers":[{"id":"33551"},{"id":"33581"}],"sizing_mode":"scale_width","title":{"id":"33554"},"toolbar":{"id":"33538"},"width":880,"x_range":{"id":"33516"},"x_scale":{"id":"33519"},"y_range":{"id":"33514"},"y_scale":{"id":"33521"}},"id":"33515","subtype":"Figure","type":"Plot"},{"attributes":{"format":"0"},"id":"33607","type":"NumeralTickFormatter"},{"attributes":{"data_source":{"id":"33547"},"glyph":{"id":"33549"},"hover_glyph":null,"muted_glyph":null,"name":"Totale casi a Benevento - Campania","nonselection_glyph":{"id":"33550"},"view":{"id":"33552"}},"id":"33551","type":"GlyphRenderer"},{"attributes":{"days":[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31]},"id":"33567","type":"DaysTicker"},{"attributes":{},"id":"33557","type":"AllLabels"},{"attributes":{},"id":"33534","type":"SaveTool"},{"attributes":{"bottom_units":"screen","fill_alpha":0.5,"fill_color":"lightgrey","left_units":"screen","level":"overlay","line_alpha":1.0,"line_color":"black","line_dash":[4,4],"line_width":2,"right_units":"screen","syncable":false,"top_units":"screen"},"id":"33537","type":"BoxAnnotation"},{"attributes":{},"id":"33519","type":"LinearScale"},{"attributes":{"callback":null,"formatters":{"@date":"datetime"},"tooltips":[["Data","@date{%F}"],["Valore","@value"]]},"id":"33546","type":"HoverTool"},{"attributes":{"base":60,"mantissas":[1,2,5,10,15,20,30],"max_interval":1800000.0,"min_interval":1000.0,"num_minor_ticks":0},"id":"33565","type":"AdaptiveTicker"},{"attributes":{},"id":"33536","type":"HelpTool"},{"attributes":{"overlay":{"id":"33537"}},"id":"33533","type":"BoxZoomTool"},{"attributes":{},"id":"33562","type":"UnionRenderers"},{"attributes":{"formatter":{"id":"33609"},"major_label_policy":{"id":"33560"},"ticker":{"id":"33524"}},"id":"33523","type":"DatetimeAxis"},{"attributes":{},"id":"33535","type":"ResetTool"},{"attributes":{"formatter":{"id":"33607"},"major_label_policy":{"id":"33557"},"ticker":{"id":"33528"}},"id":"33527","type":"LinearAxis"},{"attributes":{"mantissas":[1,2,5],"max_interval":500.0,"num_minor_ticks":0},"id":"33564","type":"AdaptiveTicker"},{"attributes":{"days":[1,4,7,10,13,16,19,22,25,28]},"id":"33568","type":"DaysTicker"},{"attributes":{"axis":{"id":"33523"},"ticker":null},"id":"33526","type":"Grid"},{"attributes":{"only_visible":true},"id":"33514","type":"DataRange1d"},{"attributes":{},"id":"33561","type":"Selection"},{"attributes":{"months":[0,1,2,3,4,5,6,7,8,9,10,11]},"id":"33571","type":"MonthsTicker"},{"attributes":{"source":{"id":"33547"}},"id":"33582","type":"CDSView"},{"attributes":{"months":[0,2,4,6,8,10]},"id":"33572","type":"MonthsTicker"},{"attributes":{},"id":"33575","type":"YearsTicker"},{"attributes":{"months":[0,6]},"id":"33574","type":"MonthsTicker"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"x":{"field":"date"},"y":{"field":"value"}},"id":"33580","type":"Circle"}],"root_ids":["33515"]},"title":"Bokeh Application","version":"2.3.1"}}
+        </script>
+        <script type="text/javascript">
+          (function() {
+            var fn = function() {
+              Bokeh.safely(function() {
+                (function(root) {
+                  function embed_document(root) {
+                    
+                  var docs_json = document.getElementById('33822').textContent;
+                  var render_items = [{"docid":"1f4e44e2-3ba9-46a8-9669-aa7bbe131e6f","root_ids":["33515"],"roots":{"33515":"ccdc6680-a015-4077-9bf7-f0ff3b8b4f63"}}];
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                
+                  }
+                  if (root.Bokeh !== undefined) {
+                    embed_document(root);
+                  } else {
+                    var attempts = 0;
+                    var timer = setInterval(function(root) {
+                      if (root.Bokeh !== undefined) {
+                        clearInterval(timer);
+                        embed_document(root);
+                      } else {
+                        attempts++;
+                        if (attempts > 100) {
+                          clearInterval(timer);
+                          console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing");
+                        }
+                      }
+                    }, 10, root)
+                  }
+                })(window);
+              });
+            };
+            if (document.readyState != "loading") fn();
+            else document.addEventListener("DOMContentLoaded", fn);
+          })();
+        </script>
+    
+  </body>
+  
+</html>
